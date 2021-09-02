@@ -15,12 +15,12 @@ public class Persona {
   private String apellidoAdicional = null;
   @SerializedName("fechaNacimiento")
   private String fechaNacimiento = null;
-  @SerializedName("RFC")
-  private String RFC = null;
-  @SerializedName("CURP")
-  private String CURP = null;
-  @SerializedName("NSS")
-  private String NSS = null;
+  @SerializedName("rfc")
+  private String rfc = null;
+  @SerializedName("curp")
+  private String curp = null;
+  @SerializedName("nss")
+  private String nss = null;
   @SerializedName("entidadAfiliadora")
   private CatalogoEntidadAfiliadora entidadAfiliadora = null;
   @SerializedName("nacionalidad")
@@ -97,43 +97,43 @@ public class Persona {
     this.fechaNacimiento = fechaNacimiento;
   }
 
-  public Persona RFC(String RFC) {
-    this.RFC = RFC;
+  public Persona rfc(String rfc) {
+    this.rfc = rfc;
     return this;
   }
 
-  public String getRFC() {
-    return RFC;
+  public String getRfc() {
+    return rfc;
   }
 
-  public void setRFC(String RFC) {
-    this.RFC = RFC;
+  public void setRfc(String rfc) {
+    this.rfc = rfc;
   }
 
-  public Persona CURP(String CURP) {
-    this.CURP = CURP;
+  public Persona curp(String curp) {
+    this.curp = curp;
     return this;
   }
 
-  public String getCURP() {
-    return CURP;
+  public String getCurp() {
+    return curp;
   }
 
-  public void setCURP(String CURP) {
-    this.CURP = CURP;
+  public void setCurp(String curp) {
+    this.curp = curp;
   }
 
-  public Persona NSS(String NSS) {
-    this.NSS = NSS;
+  public Persona nss(String nss) {
+    this.nss = nss;
     return this;
   }
 
-  public String getNSS() {
-    return NSS;
+  public String getNss() {
+    return nss;
   }
 
-  public void setNSS(String NSS) {
-    this.NSS = NSS;
+  public void setNss(String nss) {
+    this.nss = nss;
   }
 
   public Persona entidadAfiliadora(CatalogoEntidadAfiliadora entidadAfiliadora) {
@@ -213,8 +213,8 @@ public class Persona {
     return Objects.equals(this.nombre, persona.nombre) && Objects.equals(this.apellidoPaterno, persona.apellidoPaterno)
         && Objects.equals(this.apellidoMaterno, persona.apellidoMaterno)
         && Objects.equals(this.apellidoAdicional, persona.apellidoAdicional)
-        && Objects.equals(this.fechaNacimiento, persona.fechaNacimiento) && Objects.equals(this.RFC, persona.RFC)
-        && Objects.equals(this.CURP, persona.CURP) && Objects.equals(this.NSS, persona.NSS)
+        && Objects.equals(this.fechaNacimiento, persona.fechaNacimiento) && Objects.equals(this.rfc, persona.rfc)
+        && Objects.equals(this.curp, persona.curp) && Objects.equals(this.nss, persona.nss)
         && Objects.equals(this.entidadAfiliadora, persona.entidadAfiliadora)
         && Objects.equals(this.nacionalidad, persona.nacionalidad)
         && Objects.equals(this.estadoCivil, persona.estadoCivil) && Objects.equals(this.sexo, persona.sexo)
@@ -223,7 +223,7 @@ public class Persona {
 
   @Override
   public int hashCode() {
-    return Objects.hash(nombre, apellidoPaterno, apellidoMaterno, apellidoAdicional, fechaNacimiento, RFC, CURP, NSS,
+    return Objects.hash(nombre, apellidoPaterno, apellidoMaterno, apellidoAdicional, fechaNacimiento, rfc, curp, nss,
         entidadAfiliadora, nacionalidad, estadoCivil, sexo, residencia);
   }
 
@@ -237,9 +237,9 @@ public class Persona {
     sb.append("    apellidoMaterno: ").append(toIndentedString(apellidoMaterno)).append("\n");
     sb.append("    apellidoAdicional: ").append(toIndentedString(apellidoAdicional)).append("\n");
     sb.append("    fechaNacimiento: ").append(toIndentedString(fechaNacimiento)).append("\n");
-    sb.append("    RFC: ").append(toIndentedString(RFC)).append("\n");
-    sb.append("    CURP: ").append(toIndentedString(CURP)).append("\n");
-    sb.append("    NSS: ").append(toIndentedString(NSS)).append("\n");
+    sb.append("    rfc: ").append(toIndentedString(rfc)).append("\n");
+    sb.append("    curp: ").append(toIndentedString(curp)).append("\n");
+    sb.append("    nss: ").append(toIndentedString(nss)).append("\n");
     sb.append("    entidadAfiliadora: ").append(toIndentedString(entidadAfiliadora)).append("\n");
     sb.append("    nacionalidad: ").append(toIndentedString(nacionalidad)).append("\n");
     sb.append("    estadoCivil: ").append(toIndentedString(estadoCivil)).append("\n");
