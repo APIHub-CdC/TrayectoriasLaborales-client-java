@@ -15,6 +15,7 @@ public class Error {
     return this;
   }
 
+  
   public String getCodigo() {
     return codigo;
   }
@@ -28,6 +29,7 @@ public class Error {
     return this;
   }
 
+  
   public String getMensaje() {
     return mensaje;
   }

@@ -6,6 +6,7 @@ import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+
 @JsonAdapter(CatalogoClaveMoneda.Adapter.class)
 public enum CatalogoClaveMoneda {
   
